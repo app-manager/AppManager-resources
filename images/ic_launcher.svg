@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1024"
@@ -19,6 +20,18 @@
    inkscape:export-ydpi="45">
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3880">
+      <stop
+         style="stop-color:#303f9f;stop-opacity:1"
+         offset="0"
+         id="stop3882" />
+      <stop
+         style="stop-color:#3f51b5;stop-opacity:0.502"
+         offset="1"
+         id="stop3884" />
+    </linearGradient>
     <filter
        id="filter4269"
        inkscape:label="Drop shadow"
@@ -85,6 +98,48 @@
            in="SourceGraphic" />
       </feMerge>
     </filter>
+    <filter
+       id="filter3816"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-.25"
+       y="-.25">
+      <feGaussianBlur
+         id="feGaussianBlur3818"
+         in="SourceAlpha"
+         stdDeviation="8"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3820"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.4 0 " />
+      <feOffset
+         id="feOffset3822"
+         in="bluralpha"
+         dx="0"
+         dy="16"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3824">
+        <feMergeNode
+           id="feMergeNode3826"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3828"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3880"
+       id="linearGradient3886"
+       x1="248.6384"
+       y1="327.21207"
+       x2="853.48877"
+       y2="932.06244"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -94,8 +149,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="671.75118"
-     inkscape:cy="648.1509"
+     inkscape:cx="410.65826"
+     inkscape:cy="191.3054"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -112,7 +167,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -137,32 +192,29 @@
      id="layer1"
      transform="translate(0,-28.362168)">
     <rect
-       ry="100"
-       rx="100"
-       y="50.362167"
-       x="64"
-       height="912"
-       width="912"
-       id="rect3005"
-       style="fill:#7986cb;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#3f51b5;fill-opacity:1;stroke:none"
+       style="fill:#3f51b5;fill-opacity:1;stroke:none;filter:url(#filter3816)"
        id="rect2985"
-       width="912"
-       height="912"
-       x="64"
-       y="76.362167"
-       rx="100"
-       ry="100" />
+       width="800"
+       height="800"
+       x="112"
+       y="140.36217"
+       rx="87.719299"
+       ry="87.719299" />
     <rect
        style="fill:#ff80ab;fill-opacity:1;stroke:none"
        id="rect3776"
-       width="592"
-       height="64"
-       x="216"
-       y="788.36218" />
+       width="532.79999"
+       height="57.599998"
+       x="245.60001"
+       y="763.56219" />
+    <path
+       style="opacity:1;fill:url(#linearGradient3886);fill-opacity:1;stroke:none"
+       d="M 540.71875 231.1875 L 540.71875 632.15625 L 503.4375 669.4375 L 515.4375 681.4375 L 566.09375 732.09375 L 570 736 L 774.28125 736 L 774.28125 735.1875 L 778.125 735.1875 L 778.1875 735.125 L 778.25 735.1875 L 778.40625 735.1875 L 778.40625 735.34375 L 778.40625 735.375 L 778.40625 792.8125 L 245.78125 792.8125 L 364.96875 912 L 824.28125 912 C 872.87774 912 912 872.87774 912 824.28125 L 912 602.46875 L 540.71875 231.1875 z "
+       transform="translate(0,28.362168)"
+       id="rect3830" />
     <g
-       id="g3842">
+       id="g3842"
+       transform="matrix(0.9,0,0,0.9,51.2,54.036211)">
       <g
          transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,565.96173,-217.72568)"
          id="g3838">
